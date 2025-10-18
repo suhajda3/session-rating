@@ -22,16 +22,18 @@ A serverless, scalable session feedback system built on AWS, designed for confer
 ```
 session-rating/
 ├── README.md
+├── .gitignore
+├── LICENSE
 ├── template.yaml                    # CloudFormation template
 ├── get-session.zip                  # Lambda: Fetch session details
 ├── submit-rating.zip                # Lambda: Submit ratings
 ├── get-ratings.zip                  # Lambda: View ratings (auth required)
 └── frontend/                        # React application
-    ├── src/
-    │   ├── App.js
-    │   └── index.js
+    ├── public/                      # Static assets
+    ├── src/                         # Source code
     ├── package.json
-    └── .env                         # REACT_APP_API_GATEWAY_INVOKE_URL
+    ├── package-lock.json
+    └── README.md
 ```
 
 ## 🏗️ Architecture
